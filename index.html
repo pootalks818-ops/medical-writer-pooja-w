@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pooja Wagaskar | Freelance Medical Writer</title>
+
+<style>
+:root {
+  --primary: #6fb1a6;
+  --secondary: #f4f9f8;
+  --accent: #8faadc;
+  --text-dark: #2e3a3a;
+  --card-bg: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, var(--secondary), #eef6f5);
+  color: var(--text-dark);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(120deg, var(--primary), var(--accent));
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 40px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2 {
+  color: var(--primary);
+  margin-bottom: 25px;
+  border-left: 5px solid var(--accent);
+  padding-left: 12px;
+  font-size: 2rem;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+  margin-bottom: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "• ";
+  color: var(--primary);
+  font-weight: bold;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+button {
+  background: linear-gradient(120deg, var(--primary), var(--accent));
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="profile">
+    <img src="profile.jpg" alt="Pooja Wagaskar">
+    <div>
+      <h1>Pooja Wagaskar</h1>
+      <p>Freelance Medical Writer</p>
+    </div>
+  </div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#samples">Writing Samples</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#education">Education</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+I am a freelance medical writer with a strong academic background in pharmacology. I specialize in transforming complex research data into clear, evidence-based, and engaging content for healthcare professionals, researchers, and patients.
+</div>
+</section>
+
+<section id="services">
+<h2>Services</h2>
+<div class="grid">
+<div class="card"><h3>Medical Communication</h3><ul><li>Slide decks</li><li>Abstracts</li><li>Posters</li><li>Manuscripts</li><li>Blog posts</li></ul></div>
+<div class="card"><h3>Medical Education</h3><ul><li>E-learning modules</li><li>Textbooks</li><li>CME content</li></ul></div>
+<div class="card"><h3>Scientific Writing</h3><ul><li>Research papers</li><li>Journal manuscripts</li><li>Review articles</li></ul></div>
+<div class="card"><h3>Health Journalism</h3><ul><li>Blogs</li><li>Website content</li><li>Newsletters</li><li>Patient education material</li></ul></div>
+<div class="card"><h3>Academic Writing</h3><ul><li>Literature reviews</li><li>Thesis writing</li><li>Grant proposals</li></ul></div>
+</div>
+</section>
+
+<section id="samples">
+<h2>Writing Samples</h2>
+<div class="card">
+<strong>The link between oral health and neurodegeneration.</strong><br>
+Inflammopharmacology (2025) | IF 5.3 | Q1<br>
+<a href="https://doi.org/10.1007/s10787-025-01888-7" target="_blank">View Publication</a>
+</div>
+</section>
+
+<section id="testimonials">
+<h2>Testimonials</h2>
+<div class="grid">
+<div class="card">“Insightful researcher with excellent clarity.”<br><strong>— Sayali Gaikwad</strong></div>
+<div class="card">“Simplifies complex clinical information beautifully.”<br><strong>— Dr. Bhagyashree Deshmukh</strong></div>
+<div class="card">“Highly committed and detail-oriented.”<br><strong>— Monika Wagaskar</strong></div>
+</div>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<div class="card">
+<strong>M.Pharm (Pharmacology)</strong><br>
+Dr. D.Y. Patil Institute, Pune (2024–2026)
+</div>
+</section>
+
+<section id="achievements">
+<h2>Achievements</h2>
+<div class="card">
+<ul>
+<li>GPAT 2024 – AIR 2919</li>
+<li>NIPER JEE 2024 – AIR 1086</li>
+<li>CUET PG 2024 – AIR 115</li>
+<li>BVP CET 2024 – AIR 53</li>
+</ul>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="card">
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+</div>
+</section>
+
+</main>
+
+<footer>
+© 2026 Pooja Wagaskar | Freelance Medical Writer
+</footer>
+
+<script>
+const sections = document.querySelectorAll("section");
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
+  });
+});
+sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>
